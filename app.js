@@ -7,6 +7,8 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var chatbot = require('./public/javascripts/chatbot.js');
+chatbot();
 var app = express();
 
 // view engine setup
