@@ -6,7 +6,9 @@ var http = require("http").Server(app);
 var moment = require("moment");
 //socket io module
 var io = require("socket.io")(http);
-
+app.get('/', function (req, res) {
+  res.send('ChatBot SErver');
+})
 
   // io.on listens for events
   io.on("connection", function(socket) {
