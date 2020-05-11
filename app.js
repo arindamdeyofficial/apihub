@@ -1,15 +1,15 @@
 const port = process.env.PORT || 3000;
 var app = require('express')();
-var http = require('http').createServer(app);
-var io = require('socket.io');
+//var http = require('http').createServer(app);
+var server = app.listen(port, () => {
+  console.log('listening on *:3000');
+});
+var io = require('socket.io').listen(server);;
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 console.log(process.version);
-http.listen(port, () => {
-  console.log('listening on *:3000');
-});
 
 // Add headers
 app.use(function (req, res, next) {
