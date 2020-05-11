@@ -1,3 +1,4 @@
+const port = process.env.PORT || 3000;
 var app = require('express')();
 var http = require('http').createServer(app);
 
@@ -5,6 +6,6 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 console.log(process.version);
-http.listen(3000, () => {
+http.listen(port, () => {
   console.log('listening on *:3000');
 });

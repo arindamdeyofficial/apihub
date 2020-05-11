@@ -1,0 +1,23 @@
+{
+  "name": "apihub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arindamdeyofficial/apihub.git"
+  },
+  "author": "Arindam Dey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arindamdeyofficial/apihub/issues"
+  },
+  "homepage": "https://github.com/arindamdeyofficial/apihub#readme"
+}
